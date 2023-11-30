@@ -25,7 +25,7 @@ export const writeComposite = async (spinner) => {
   const verifiableCredentialComposite = await createComposite(
     //@ts-ignore
     ceramic,
-    "./composites/00-verifiableCredential.graphql"
+    "./composites/00-verifiableClaims.graphql"
   );
 
   await writeEncodedComposite(verifiableCredentialComposite, "./src/__generated__/definition.json");

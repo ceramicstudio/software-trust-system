@@ -2,6 +2,7 @@ import Head from "next/head";
 import Nav from "../components/Navbar";
 import styles from "./index.module.css";
 import Credential from "../components/VC712";
+import Attest from "../components/ind";
 import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 import {  useAccount } from "wagmi";
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
       {loggedIn ? (
         <main className={styles.main}>
           <Credential />
+          <Attest />
         </main>
       ) : (
         <main className={styles.main}></main>
